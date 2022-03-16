@@ -99,7 +99,7 @@ The reason is because myFunction has been called which is going to repeat the ca
 
 // # Q8
 
-function myFunction(num1, num2) {
+/* function myFunction(num1, num2) {
   return num1 + num2;
 }
 
@@ -114,3 +114,19 @@ The console will log 4 and 10.
 This is because myFunction has been calledback with new variables of num3 and num1.
 Both of these variables are taking over.
 */
+
+// # Q9
+
+function myFunction(num1, num2) {
+  console.log(num3);
+}
+
+const num1 = 10;
+const num2 = 1;
+const num3 = 20;
+
+myFunction(num3, num1);
+
+/* What will be logged out on the console when this code rus? Why?
+It will console log 20.
+The variable num3 is 20 and placed as a global scope. */
