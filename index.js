@@ -133,7 +133,7 @@ The variable num3 is 20 and placed as a global scope. */
 
 // # Q10
 
-function myFunction(num1, num2, num3) {
+/* function myFunction(num1, num2, num3) {
   console.log(num3);
 }
 
@@ -146,3 +146,20 @@ myFunction(num3, num1, 100);
 /* What will be logged out on the console when this code runs? Why?
 It will console log 100. The value provided for num3 in the function is 100.
 This is because the parameter values are provided when calling myFunction. */
+
+// # Q11
+
+function myFunction(num1, num2, num3) {
+  return num1 + num2 + num3;
+}
+
+const num1 = 10;
+const num2 = 1;
+const num3 = 20;
+
+const result = myFunction(1, 1, 1);
+
+/* What will be the value of result when this code runs? Why?
+The result is 3.
+This is because when myFunction is called, it has three arguments of 1, 1 , 1. 
+These 1, 1, 1 arguments are going to be addded in the result num1 + num2 + num3 */
