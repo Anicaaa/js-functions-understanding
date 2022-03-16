@@ -149,7 +149,7 @@ This is because the parameter values are provided when calling myFunction. */
 
 // # Q11
 
-function myFunction(num1, num2, num3) {
+/* function myFunction(num1, num2, num3) {
   return num1 + num2 + num3;
 }
 
@@ -163,3 +163,21 @@ const result = myFunction(1, 1, 1);
 The result is 3.
 This is because when myFunction is called, it has three arguments of 1, 1 , 1. 
 These 1, 1, 1 arguments are going to be addded in the result num1 + num2 + num3 */
+
+// # Q12
+
+function getSomeValue() {
+  return 2;
+}
+
+function myFunction(num1) {
+  const num2 = getSomeValue();
+  return num1 * num2;
+}
+
+const result = myFunction(5);
+
+/* What will be the value of result when this code runs? Why?
+It's 10 because myFunction has the value of 5 which is multiplied with getSomeValue which has
+the value of 2. As a result, 5 * 2 = 10.
+ */
