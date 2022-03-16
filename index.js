@@ -67,7 +67,7 @@ No, the result wasn't what I expected. */
 
 // # Q6
 
-function myFunction(num, num1) {
+/* function myFunction(num, num1) {
   console.log(num1);
 }
 
@@ -78,4 +78,21 @@ myFunction(num1, num);
 
 /* What value will be logged inside the function call? Why?
 It's 2 and 10 because we're changing the order, the values are swapped.
+*/
+
+// # Q7
+
+let counter = 1;
+
+function myFunction() {
+  counter++;
+  return counter;
+}
+
+myFunction();
+const num = myFunction();
+
+/* What will the value of counter be at the end of this program? Why?
+The value of counter is 3.
+The reason is because myFunction has been called which is going to repeat the calculation as 2+1.
 */
