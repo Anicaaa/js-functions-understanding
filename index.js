@@ -50,6 +50,23 @@ However, when I console.log(num), it remains 10, nothing changes. */
 
 // # Q5
 
+/* function myFunction(num, num1) {
+  console.log(num1);
+}
+
+let num = 10;
+let num1 = 2;
+
+myFunction(num); */
+
+/* What value will be logged inside the function call? Why?
+The value that is logged inside the function call is undefined. 
+This is because myFunction on line 60 is not complete and it's not a function.
+
+No, the result wasn't what I expected. */
+
+// # Q6
+
 function myFunction(num, num1) {
   console.log(num1);
 }
@@ -57,10 +74,8 @@ function myFunction(num, num1) {
 let num = 10;
 let num1 = 2;
 
-myFunction(num);
+myFunction(num1, num);
 
 /* What value will be logged inside the function call? Why?
-The value that is logged inside the function call is 10. 
-This is because the variable num equals 10. The variable num is assigned in one of the myFunction arguments.
-
-Yes, the result is what I've been expecting. */
+It's 2 and 10 because we're changing the order, the values are swapped.
+*/
