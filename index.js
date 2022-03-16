@@ -183,7 +183,7 @@ the value of 2. As a result, 5 * 2 = 10. */
 
 // # Q13
 
-function getSomeValue() {
+/* function getSomeValue() {
   return 2;
 }
 
@@ -197,3 +197,20 @@ const result = myFunction(5);
 /* What will be the value of result when this code runs? Why?
 It's 10 because myFunction has the value of 5 which is multiplied with getSomeValue which has
 the value of 2. As a result, 5 * 2 = 10. */
+
+// # Q14
+
+function getSomeValue() {
+  return 2;
+}
+
+function myFunction(num1) {
+  return getSomeValue() * getSomeValue();
+}
+
+const result = myFunction(5);
+console.log(result);
+
+/* What will be the value of result when this code runs? Why?
+It's 4 because getSomeValue has the value of 2 which is multiplied with getSomeValue which has
+the value of 2. As a result, 2 * 2 = 4. */
