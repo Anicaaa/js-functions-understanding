@@ -82,7 +82,7 @@ It's 2 and 10 because we're changing the order, the values are swapped.
 
 // # Q7
 
-let counter = 1;
+/* let counter = 1;
 
 function myFunction() {
   counter++;
@@ -95,4 +95,22 @@ const num = myFunction();
 /* What will the value of counter be at the end of this program? Why?
 The value of counter is 3.
 The reason is because myFunction has been called which is going to repeat the calculation as 2+1.
+*/
+
+// # Q8
+
+function myFunction(num1, num2) {
+  return num1 + num2;
+}
+
+const num1 = 10;
+const num2 = 1;
+const num3 = 4;
+
+const result = myFunction(num3, num1);
+
+/* What will be logged out on the console when this code rus? Why?
+The console will log 4 and 10.
+This is because myFunction has been calledback with new variables of num3 and num1.
+Both of these variables are taking over.
 */
