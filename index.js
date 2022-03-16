@@ -117,7 +117,7 @@ Both of these variables are taking over.
 
 // # Q9
 
-function myFunction(num1, num2) {
+/* function myFunction(num1, num2) {
   console.log(num3);
 }
 
@@ -130,3 +130,19 @@ myFunction(num3, num1);
 /* What will be logged out on the console when this code rus? Why?
 It will console log 20.
 The variable num3 is 20 and placed as a global scope. */
+
+// # Q10
+
+function myFunction(num1, num2, num3) {
+  console.log(num3);
+}
+
+const num1 = 10;
+const num2 = 1;
+const num3 = 20;
+
+myFunction(num3, num1, 100);
+
+/* What will be logged out on the console when this code runs? Why?
+It will console log 100. The value provided for num3 in the function is 100.
+This is because the parameter values are provided when calling myFunction. */
